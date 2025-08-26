@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function Home() {
+export default function Page() {
   return (
     <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
@@ -12,10 +12,14 @@ export default function Home() {
           height={38}
           priority
         />
+        <p>
+          This is an example page in Next.js.
+        </p>
+
         <ul className="font-mono list-inside list-disc text-sm/6 text-center sm:text-left">
           <li className="mb-2 tracking-[-.01em]">
-            <a href="/nextjs-page" className="hover:underline">
-              Example Next.js page
+            <a href="/" className="hover:underline">
+              Home
             </a>
           </li>
           <li className="tracking-[-.01em]">
